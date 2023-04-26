@@ -3,6 +3,9 @@ SUMMARY
         Basically, my previous project Incremental Engine Builder but with a capitalist theme.
 
 TODO
+    x simplify object strucutre - an array of { dec: {name: quantity}, inc: {name: quant}}
+    x have cards generate randomly - only cards that you have the required from
+    x restructure cards for spinning off
 
 QUESTIONS
 
@@ -13,7 +16,7 @@ DESIGN
     These cards convert stuff into other stuff.
 
 
-    Land
+    Land - there's a bit of ludonarrative dissonance to have forest generate 'forests' as opposed to trees but there's no parallel for mountains (veins?)
         Forest
             Money -> <x> Forests
 
@@ -24,3 +27,4 @@ DESIGN
         Lumberjacks
             Money -> <x> Lumberjacks
 MAYBE
+    spin off the business into a separate entity (compress the tableau to a single card)

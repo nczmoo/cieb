@@ -3,8 +3,10 @@ $(document).on('click', '', function(e){
 })
 
 $(document).on('click', '.replacing', function(e){	
-	game.buy(e.target.id.split('-')[1]);
+	game.buy(this.id.split('-')[1]);
+	game.turn();
 	ui.refresh();
+	
 })
 
 
@@ -31,10 +33,10 @@ $(document).on('click', '.verb2', function(e){
 
 $(document).on('click', 'button', function(e){
 	ui.refresh()
+	
 })
 $(document).on('click', '.buy', function(e){
 	let id = e.target.id.split('-')[1];
-	console.log(id);
 	game.buying = id; 
 	ui.buy(id);
 })
